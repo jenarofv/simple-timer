@@ -1,0 +1,17 @@
+body {
+  background-color: #eef;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#timerButton {
+  display: block;
+  margin: 50px auto;
+}
