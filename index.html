@@ -5,21 +5,22 @@
     <title>Jenaro's Timer App</title>
     <link href="./style.css" rel="stylesheet" />
     <script src="./script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <header> <h1> Timer App </h1> </header>
     <div class="timer">
       <div class="timeUnit">
-        <input class="timeUnit" type="number" min=0 max=24 id="hours" name="hours" placeholder="Hours"/>
+        <input type="number" min=0 max=24 id="hours" name="hours" placeholder="Hours"/>
         <label for="hours"> Hours (between 0 and 24)</label>
       </div>
       <div class="timeUnit">
-        <input class="timeUnit" type="number" min=0 max=60 id="minutes" name="minutes" placeholder="Minutes"/>
+        <input type="number" min=0 max=60 id="minutes" name="minutes" placeholder="Minutes"/>
         <label for="minutes"> Minutes (between 0 and 60)</label>
       </div>
       <div class="timeUnit">
-        <input class="timeUnit" type="number" min=0 max=60 id="seconds" name="seconds" placeholder="Seconds"/>
+        <input type="number" min=0 max=60 id="seconds" name="seconds" placeholder="Seconds"/>
         <label for="seconds"> Seconds (between 0 and 60)</label>
       </div>
     </div>

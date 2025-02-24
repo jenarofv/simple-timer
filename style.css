@@ -25,3 +25,17 @@ header h1 {
 ::placeholder {
    text-align: center;
 }
+
+label {
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .timer {
+    flex-direction: column;
+  }
+
+  .timeUnit {
+    margin-bottom: 2rem;
+  }
+}
