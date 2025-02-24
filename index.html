@@ -10,9 +10,18 @@
   <body>
     <header> <h1> Timer App </h1> </header>
     <div class="timer">
-      <input class="timeUnit" type="number" id="hours" name="hours" placeholder="Hours"/>
-      <input class="timeUnit" type="number" id="minutes" name="minutes" placeholder="Minutes"/>
-      <input class="timeUnit" type="number" id="seconds" name="seconds" placeholder="Seconds"/>
+      <div class="timeUnit">
+        <input class="timeUnit" type="number" min=0 max=24 id="hours" name="hours" placeholder="Hours"/>
+        <label for="hours"> Hours (between 0 and 24)</label>
+      </div>
+      <div class="timeUnit">
+        <input class="timeUnit" type="number" min=0 max=60 id="minutes" name="minutes" placeholder="Minutes"/>
+        <label for="minutes"> Minutes (between 0 and 60)</label>
+      </div>
+      <div class="timeUnit">
+        <input class="timeUnit" type="number" min=0 max=60 id="seconds" name="seconds" placeholder="Seconds"/>
+        <label for="seconds"> Seconds (between 0 and 60)</label>
+      </div>
     </div>
     <button id=timerButton> Set timer!</button>
   </body>

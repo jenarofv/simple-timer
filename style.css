@@ -11,7 +11,17 @@ header h1 {
   justify-content: space-evenly;
 }
 
+.timeUnit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 #timerButton {
   display: block;
   margin: 50px auto;
+}
+
+::placeholder {
+   text-align: center;
 }
