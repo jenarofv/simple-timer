@@ -8,9 +8,9 @@ const getTotalTime = () => {
   const seconds = document.getElementById("seconds").value;
 
   if (
-      (0 <= hours & hours <= 24 ) |
-      (0 <= minutes & minutes <= 60 ) |
-      (0 <= seconds & seconds <= 60 )
+      hours   < 0 | 24 < hours   |
+      minutes < 0 | 60 < minutes |
+      seconds < 0 | 60 < seconds
     ) {
     window.alert(
       "Hours, minutes or seconds value outside allowed values"
